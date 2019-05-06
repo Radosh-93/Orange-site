@@ -1,0 +1,491 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "about"
+@import "portfolio"
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit
+	vertical-align: baseline
+	box-sizing: border-box
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section
+	display: block
+body
+	line-height: 1
+ol, ul
+	list-style: none
+	padding-inline: 0px
+	margin-block-start: 0px
+	margin-block-end: 0px
+
+blockquote, q
+	quotes: none
+blockquote:before, blockquote:after,
+q:before, q:after
+	content: ''
+	content: none
+table
+	border-collapse: collapse
+	border-spacing: 0
+a
+	text-decoration: none!important
+html
+	font-size: 16px
+
+body
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: "HelveticaNeueCyr"
+	color: #464646
+	overflow-x: hidden
+	background-image: url("../img/bg-img.jpg")
+
+::selection
+	background-color: #000
+	color: #fff
+
+.wrapper
+	width: 100%
+	max-width: 940px
+	margin: 0 auto
+
+/*=====================HEADER=================================*/
+header
+	position: fixed
+	top: 0
+	width: 100%
+	background: white
+	z-index: 9999
+.header
+	display: flex
+	align-items: center
+	justify-content: space-between
+	font-family: $Bebas
+	padding: 14.5px 0
+	border-bottom: 2px solid #f2ae9c
+	.menu__header
+		.logo
+			display: flex
+			align-items: center
+			font-size: 2rem
+			a
+				color: #e8603c
+			span
+				color: #f3af9d
+
+	.menu__content
+		nav
+			display: flex
+			a
+				font-size: 1rem
+				color: $Grey
+				transition: .3s color
+				word-spacing: 0.1875rem //3px
+				&:hover
+					color: $LightRed
+				&:active
+					color: $LightRed
+				&:not(:last-child)
+					margin-right: 1.688rem
+
+/*====================Hamburger for mobile===============================*/
+.clicked_nav
+	color: $DarkRose!important
+
+.menu__header
+	display: flex
+	.hamburger__menu
+		display: none
+.visuallyHidden
+	position: absolute
+	overflow: hidden
+	clip: rect(0 0 0 0)
+	height: 1px
+	width: 1px
+	margin: -1px
+	padding: 0
+	border: 0
+.hamburger
+	margin: 0 auto
+	margin-top: 30px
+	width: 30px
+	height: 30px
+	position: relative
+
+.hamburger .bar
+	padding: 0
+	width: 30px
+	height: 4px
+	background-color: #e8603c
+	display: block
+	border-radius: 4px
+	transition: all 0.4s ease-in-out
+	position: absolute
+
+.bar1
+	top: 0
+
+.bar2, .bar3
+	top: 13.5px
+
+.bar3
+	right: 0
+
+.bar4
+	bottom: 0
+.checkbox1:checked + label > .hamburger1 > .bar1
+	transform: rotate(45deg)
+	transform-origin: 5%
+	width: 41px
+
+
+.checkbox1:checked + label > .hamburger1 > .bar2
+	transform: translateX(-40px)
+	background-color: transparent
+
+
+.checkbox1:checked + label > .hamburger1 > .bar3
+	transform: translateX(40px)
+	background-color: transparent
+
+
+.checkbox1:checked + label > .hamburger1 > .bar4
+	transform-origin: 5%
+	transform: rotate(-45deg)
+	width: 41px
+
+/*=====================HEADER==========================================*/
+
+
+/*========================MAIN=========================================*/
+main
+	margin-top: 80px
+	position: relative
+	&:before
+		content: ""
+		height: 3.75rem
+		width: 100%
+		background-color: #f2ae9c
+		position: absolute
+		z-index: -2
+	p
+		font-size: .75rem
+
+/*====================Верхня смужка============================*/
+.slider
+	position: relative
+	background-color: #ffffff
+	&:before
+		content: ""
+		position: absolute
+		height: 100%
+		width: 0.71875rem
+		top: 0
+		left: -0.71875rem
+		background-color: #fff
+	&:after
+		content: ""
+		position: absolute
+		height: 100%
+		width: 0.71875rem
+		top: 0
+		right: -0.71875rem
+		background-color: #fff
+
+/*==========================Слайдер================================*/
+
+
+.slider__main
+	.slick-prev:before, .slick-next:before
+		content: none
+	.slick-prev
+		left: 2.5rem
+		background-image: url("../img/arrow-prev.png")
+	.slick-next
+		right: 2.5rem
+		background-image: url("../img/arrow-next.png")
+	.slick-next, .slick-prev
+		z-index: 999
+		width: 36px
+		height: 52px
+		opacity: .75
+		&:hover
+			opacity: 1
+	.slick-slide
+		img
+			max-width: 100%
+
+		.text__slide
+			position: absolute
+			left: 2.25rem
+			bottom: 2rem
+			width: 44%
+			background-color: rgba(232, 102, 60, 0.8)
+			padding: 1.25rem 1.25rem 0 1.25rem
+			.title_h3
+				color: #ffffff
+			.content__slide
+				font-size: 0.75rem
+				color: #ffffff
+				line-height: 1.2
+				padding: 1.125rem 0 1.438rem
+
+.slick-slide
+	outline: none
+.slider__nav
+	overflow: hidden
+	margin-top: 1.063rem
+	.slick-prev:before, .slick-next:before
+		font-size: 1.75rem
+		color: $LightRed
+	.slick-prev
+		left: 0.5rem
+	.slick-next
+		right: 1rem
+	.slick-next, .slick-prev
+		z-index: 999
+		//width: 36px
+		//height: 52px
+		opacity: .75
+		&:hover
+			opacity: 1
+	.slick-list
+		.slick-track
+			&:before
+				content: none
+			&:after
+				content: none
+			.slick-slide
+				display: flex
+				justify-content: center
+				opacity: 0.5
+				cursor: pointer
+			.slick-current, .slick-center
+				opacity: 1
+
+
+
+/*======================Блоки з кнопками======================*/
+.items__information
+	display: flex
+	justify-content: space-between
+	.item
+		width: 30.5%
+		line-height: 1.5
+		padding-bottom: 2.813rem
+		padding-right: 0.625rem
+		.title__item
+			display: flex
+			align-items: center
+			padding: 2.5rem 0 1.875rem
+			.title_h3
+				margin-left: 1.25rem
+
+		.item__content
+			color: #414141
+			padding-bottom: 1.063rem
+.title_h3
+	font-family: $Bebas
+	font-size: 1.125rem
+	color: $LightRed
+.btn__main
+	font-family: $Bebas
+	font-size: 0.75rem
+	color: $LightRed
+	border: 3px solid $LightRed
+	transition: all 300ms ease
+	box-shadow: 0 0.25rem 0.625rem 0.125rem rgba(black, 0.2)
+	padding: 0.5rem 0.875rem
+	display: inline-block
+	position: relative
+	cursor: pointer
+	&:before
+		position: absolute
+		content: ''
+		width: 0
+		height: 100%
+		background: $LightRed
+		top: 0
+		left: 50%
+		z-index: -1
+		transition: all 0ms ease
+	&:hover
+		color: #ffffff
+		box-shadow: none
+		&:before
+			position: absolute
+			content: ''
+			width: 100%
+			height: 100%
+			background: $LightRed
+			top: 0
+			left: 0
+			z-index: -1
+			transition: all 300ms ease
+
+
+/*======================Картинки з підписами==================*/
+.title__img
+	display: flex
+	justify-content: space-between
+	align-items: center
+	&:after
+		content: ''
+		background: url("../img/line_18x18.png")
+		width: 100%
+		height: 1.1875rem
+	.title_h3
+		white-space: pre
+		padding-right: 1rem
+.recent__works
+	display: flex
+	flex-direction: column
+	.title_works
+		padding-bottom: 1.5rem
+.items_works
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	.item__work
+		display: flex
+		flex-direction: column
+		margin-bottom: 3rem
+		position: relative
+		overflow: hidden
+		.fa
+			font-size: 50px
+			position: absolute
+			top: 0
+			left: 0
+			color: transparent
+			padding: 68px 89px
+			transition: background 0.4s ease, color 0.2s linear
+			&:hover
+				background-color: rgba(0, 0, 0, 0.85)
+				opacity: 0.8
+				color: white
+		.img__sing
+			border: 1px solid #dbdbdb
+			border-top: 1px solid transparent
+			font-family: $Bebas
+			padding: 0.75rem
+			.h6__title
+				color: #b9b9b9
+				word-spacing: 0.1875rem //3px
+.data__works
+	font-family: $Bebas
+	color: $LightRed
+	font-size: 0.6875rem
+	word-spacing: .125rem //2px
+
+/*========================MAIN=========================================*/
+
+
+/*======================FOOTER==========================================*/
+.pink_font
+	color: #f3b29d
+footer
+	background-color: #f3b29d
+	z-index: -5
+.footer:before
+	content: ""
+	position: absolute
+	top: 0
+	left: -0.71875rem
+	width: 0.71875rem
+	height: 100%
+	background-color: #ffffff
+.footer:after
+	content: ""
+	position: absolute
+	top: 0
+	right: -0.71875rem
+	width: 0.71875rem
+	height: 100%
+	background-color: #ffffff
+.footer
+	display: flex
+	justify-content: space-between
+	width: 100%
+	background: $LightRed
+	color: #ffffff
+	font-size: 0.75rem
+	line-height: 1.2
+	position: relative
+	padding-bottom: 1.875rem
+	.blocks
+		width: 32%
+		display: flex
+		flex-direction: column
+
+		.title
+			font-family: $Bebas
+			font-size: 1.25rem
+			padding-top: 2.313rem
+			padding-bottom: 1.563rem
+			word-spacing: 0.1875rem //3px
+	.about__block
+		padding-left: 2.188rem
+		.second__content
+			padding-top: 0.9375rem
+	.widget__block
+		width: 24%
+		.nickname
+			transition: .3s
+			&:hover
+				color: #5ca3d5
+		.coment__time
+			display: inline-block
+			padding: 0.5625rem 0 1.125rem
+	.contact__block
+		padding-right: 1.875rem
+		display: flex
+		flex-direction: column
+		align-items: start
+
+		a.contacts
+			color: #ffffff
+			transition: .3s
+			&:hover
+				color: #f3b29d
+		.email
+			padding-top: 0.8125rem
+		.soc_icons
+			margin-top: 1.25rem
+			font-size: 1.875rem
+			z-index: 2
+			width: 100%
+			display: flex
+			justify-content: start
+			.icons
+				margin-right: 0.5rem
+				transition: .2s
+				&:hover
+					transform: scale(1.1)
+
+/*=================FOOTER=========================================*/
+
+@import "media" // Всегда в конце
+
+
+

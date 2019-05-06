@@ -1,0 +1,149 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+///* Large Devices, Wide Screens */
+//@media only screen and (max-width : 1200px)
+////	/**/
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 970px)
+	.header
+		padding-left: 2.25rem
+		padding-right: 2.25rem
+	.slider__main
+		.slick-prev
+			left: 0.5rem
+		.slick-next
+			right: 0.5rem
+		.slick-slide
+			img
+				max-width: 130%
+	.items__information
+		margin: 0 1.25rem
+	.recent__works
+		margin: 0 1.25rem
+	.items_works
+		justify-content: space-evenly
+		.item__work
+			margin-right: 4px
+	/*======================about.html & portfolio.html======================*/
+
+	.main__block, .wrapper_mb
+		margin: 0 1.25rem
+	.filter__items, .items__content
+		margin-right: 1.25rem
+		margin-left: 1.25rem
+
+
+///* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	html
+		font-size: 18px
+	.header
+		flex-direction: column
+		padding: 0.25rem 2.25rem
+		.menu__header
+			display: flex
+			justify-content: space-between
+			width: 100%
+			padding: 0 20px
+			.hamburger__menu
+				display: flex
+				margin-top: -29px
+				align-items: center
+		.menu__content
+			display: none
+			nav
+				display: flex
+				flex-direction: column
+				align-items: center
+				text-align: center
+				z-index: 2000
+				width: 100%
+				padding: 20px
+				a:not(:last-child)
+					margin-right: 0
+				a
+					font-size: 25px
+	.slider__main
+		.slick-prev
+			left: 0.5rem
+		.slick-next
+			right: 0.5rem
+		.slick-slide
+			img
+				max-width: 130%
+			.text__slide
+				width: 60%
+				left: 2.5rem
+				bottom: 0.5rem
+				padding: 0.5rem 0.5rem 0 0.5rem
+				.title_h3
+					font-size: 1rem
+				.content__slide
+					font-size: 0.6rem
+					padding: 0.56rem 0 0.7rem
+	.items__information
+		flex-wrap: wrap
+		.item
+			width: 48.5%
+			min-width: 294px
+			margin: 0 auto
+			&:not(:last-child)
+				padding-bottom: 0.5rem
+	.footer
+		flex-wrap: wrap
+		.widget__block
+			min-width: 223px
+		.blocks
+			min-width: 315px
+			margin: 0 auto
+			padding: 0 15px
+			.soc_icons
+				.icons
+					margin-right: calc(0.5rem + 6px)
+					img
+						width: 120%
+
+	.img__items
+		width: 120%
+///* Extra Small Devices, Phones */
+//@media only screen and (max-width : 480px)
+//	//html
+//	//	font-size: 30px
+//
+///* Custom, iPhone Retina */
+//@media only screen and (max-width : 321px)
+//	/**/
+//
+//
+///*==========  Mobile First  ==========*/
+//
+///* Custom, iPhone Retina */
+//@media only screen and (min-width : 320px)
+//	html
+//		font-size: 30px
+//
+///* Extra Small Devices, Phones */
+//@media only screen and (min-width : 480px)
+//	html
+//		font-size: 25px
+//
+//
+///* Small Devices, Tablets */
+//@media only screen and (min-width : 768px)
+//	html
+//		font-size: 20px
+//
+//
+///* Medium Devices, Desktops */
+//@media only screen and (min-width : 992px)
+//	html
+//		font-size: 16px
+//
+//
+///* Large Devices, Wide Screens */
+//@media only screen and (min-width : 1200px)
+//	/**/
+//
