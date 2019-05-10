@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ee5895c-7d5e-4f39-97d5-5b1bee1da8b3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/sass/main.sass" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -116,8 +114,8 @@
           <file leaf-file-name="main.sass" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="88" column="23" selection-start-line="88" selection-start-column="23" selection-end-line="88" selection-end-column="23" />
+                <state relative-caret-position="272">
+                  <caret line="325" column="19" lean-forward="true" selection-start-line="325" selection-start-column="19" selection-end-line="325" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
@@ -368,12 +366,12 @@
       <workItem from="1556952541951" duration="28640000" />
       <workItem from="1557163778195" duration="15568000" />
       <workItem from="1557430938908" duration="5113000" />
-      <workItem from="1557479079962" duration="5727000" />
+      <workItem from="1557479079962" duration="6111000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208628000" />
+    <option name="totallyTimeSpent" value="209012000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -802,8 +800,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="88" column="23" selection-start-line="88" selection-start-column="23" selection-end-line="88" selection-end-column="23" />
+        <state relative-caret-position="272">
+          <caret line="325" column="19" lean-forward="true" selection-start-line="325" selection-start-column="19" selection-end-line="325" selection-end-column="19" />
         </state>
       </provider>
     </entry>
