@@ -109,5 +109,6 @@ $(document).ready(function() {
 
 	$('.item__work .fa').mouseenter(function () {
 		$(this).show();
-	})
+	});
+
 });
